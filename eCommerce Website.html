@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)file:///C:/Users/Owner/e-Commerce.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="file:///C:/Users/Owner/Downloads/s.webp">
+<!-- Link Font Awesome CDN -->
+<link rel="stylesheet" href="./eCommerce Website_files/all.min.css">
+
+
+    <title>eCommerce Website</title>
+    <style>
+	
+		* {
+			box-sizing: border-box;
+		}
+		
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+		
+		
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+			background-color: #808080;
+			border-radius: 10px;
+			padding: 5px;
+            text-align: center;
+            color: white;
+        }
+		
+		h3 {
+			color: #808080;
+		}
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .product {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 310px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .product h2 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product p {
+            margin: 10px 0;
+            color: #777;
+        }
+
+        .product button {
+            background-color: #808080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+			margin-bottom: 3px;
+        }
+
+        .product button:hover {
+            background-color:  #404040;
+			cursor: pointer;
+			transition-duration: 0.3s;
+
+        }
+
+        .cart-summary {
+            margin-top: 30px;
+            background-color: #808080 ;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+		
+	 
+
+        .cart-summary h2 {
+            color:  #ffffff;
+        }
+
+        .cart-summary span {
+            font-size: 24px;
+            color:  #000000;
+        }
+		
+		.contact-icon {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: #262626;
+			padding: 10px 15px;
+			border-radius: 6px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			z-index: 1000;
+			text-align: center;
+		}
+
+		.contact-icon a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.contact-icon i {
+			margin-right: 5px;
+		}
+
+		.contact-icon:hover {
+			background-color: #999999;
+		}
+
+		
+    </style>
+</head>
+<body>
+
+<div class="container">
+	<header>
+    <h1>Simple Store</h1>
+	</header>
+    <div>
+		<h3>Find whatever you want !</h3>
+	<div>
+	
+    <div class="product-list">
+        <div class="product">
+            <img src="./eCommerce Website_files/dot.jfif" alt="Product 1">
+            <h2>Dot &amp; Key Vitamine C + E Sober Super Bright Moisturizer</h2>
+            <p>Price: ₹299</p>
+	        <button onclick="buy now(1, 499)">Buy Now</button>
+            <button onclick="addToCart(1, 499)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./eCommerce Website_files/sun.jfif" alt="Product 2">
+            <h2>Dot &amp; Key Vitamine C + E Watermelon Cooling Sunscreen spf50+ </h2>
+            <p>Price: ₹500</p>
+		    <button onclick="buy now(2, 500)">Buy Now</button>
+            <button onclick="addToCart(2, 500)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./eCommerce Website_files/str.avif" alt="Product 3">
+            <h2>Dot &amp; Key Skincare Strawberry Dew Sunscreen Stick</h2>
+            <p>Price: ₹599</p>
+	        <button onclick="buy now(3, 599)">Buy Now</button>
+            <button onclick="addToCart(3, 599)">Add to Cart</button>
+        </div>
+		
+		<div class="product">
+            <img src="./eCommerce Website_files/hg.webp" alt="Product 4">
+            <h2>Dot &amp; Key Vitamine Skincare Hand Cream Lavender + Peppermint</h2>
+            <p>Price: ₹600</p>
+	        <button onclick="buy now(4, 600)">Buy Now</button>
+            <button onclick="addToCart(4, 600)">Add to Cart</button>
+        </div>
+		
+		<div class="product">
+            <img src="./eCommerce Website_files/hee.jfif" alt="Product 5">
+            <h2>The Power Of Reading</h2>
+            <p>Price: ₹200</p>
+	        <button onclick="buy now(5, 200)">Buy Now</button>
+            <button onclick="addToCart(5, 200)">Add to Cart</button>
+        </div>
+		
+		<div class="product">
+            <img src="./eCommerce Website_files/book.jfif" alt="Product 6">
+            <h2>What Should I Do With My Life ? </h2>
+            <p>Price: ₹150</p>
+	        <button onclick="buy now(6, 150)">Buy Now</button>
+            <button onclick="addToCart(6, 150)">Add to Cart</button>
+        </div>
+		
+		<div class="product">
+            <img src="./eCommerce Website_files/he.jfif" alt="Product 7">
+            <h2>BREATH</h2>
+            <p>Price: ₹300</p>
+	        <button onclick="buy now(7, 300)">Buy Now</button>
+            <button onclick="addToCart(7, 300)">Add to Cart</button>
+        </div>
+		
+		<div class="product">
+            <img src="./eCommerce Website_files/heh.jfif" alt="Product 8">
+            <h2>The Psychology Of Money </h2>
+            <p>Price: ₹350</p>
+	        <button onclick="buy now(8, 350)">Buy Now</button>
+            <button onclick="addToCart(8, 350)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <h2>Cart: <span id="total-products">2</span></h2>
+        <h2>Total Price: ₹<span id="total-price">649</span></h2>
+
+    </div>
+	
+	<div class="contact-icon">
+    <a href="mailto:shrutiavhad30@gmail.com" title="Contact Us">
+        <i class="fas fa-envelope"></i> Contact Us
+    </a>
+</div>
+</div>
+
+<script>
+    let totalProducts = 0;
+    let totalPrice = 0;
+
+    // Function to add a product to the cart
+    function addToCart(productId, productPrice) {
+        totalProducts++; // Increment the total number of products
+        totalPrice += productPrice; // Add the product's price to the total price
+
+        // Update the cart summary on the page
+        document.getElementById('total-products').textContent = totalProducts;
+        document.getElementById('total-price').textContent = totalPrice;
+    }
+</script>
+
+
+
+</div></div></body></html>
